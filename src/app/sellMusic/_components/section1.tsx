@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import Link from "next/link";
 import { FaCheck} from "react-icons/fa"
 import { RxCross1} from "react-icons/rx"

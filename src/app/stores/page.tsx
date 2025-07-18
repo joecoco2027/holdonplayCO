@@ -1,5 +1,4 @@
 
-import { div } from "framer-motion/client";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -258,3 +257,4 @@ export default function Stores(){
             </div>
         </div>
     )
+}
