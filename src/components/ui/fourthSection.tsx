@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function FourthSection(){
     return (
-        <div className=" flex flex-row justify-center items-center bg-black p-10">
+        <div className=" text-white flex flex-row lg:flex-row sm:flex-col justify-center items-center bg-black p-10">
             <Image src="/forhome/adela.webp" width={300} height={300} alt="decoration image"/>
             <div className=" ml-10">
                 <h1 className="text-5xl font-bold"><span className="text-blue-400">Why Choose</span> HoldOnPlay</h1>

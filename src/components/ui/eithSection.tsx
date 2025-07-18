@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function EightSection(){
     return (
-        <div className="flex justify-center items-center h-dvh bg-black">
+        <div className="flex flex-row lg:flex-row sm:flex-col justify-center items-center h-dvh bg-black text-center">
             <Image src="/forhome/kingofstatenisland.webp" width={500} height={500} alt="Earnings with Music Publishing"/>
             <div className="w-200 ml-10">
-                <h1 className="text-6xl font-bold">Maximize Your Earnings with <span className="text-blue-400">Music Publishing</span></h1>
+                <h1 className="text-6xl font-bold sm:text-2xl">Maximize Your Earnings with <span className="text-blue-400">Music Publishing</span></h1>
                 <p>Distribution isn&apos;t only way to make money as an independent musician. When you write a song, you are owed royalities.
                     Your original songs generate publishing revenue with every stream on Spotify, video creation on TikTok, view on Youtube, radio spin, or 
                     live perfomance worldwide. 

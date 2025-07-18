@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function FifthSection(){
     return (
         <div className="flex flex-col items-center justify-center h-130 text-center">
-            <div className="w-300">
+            <div className="w-100  sm:w-150  md:w-150 lg:w-300">
             <h1 className="text-5xl font-bold">Stream & Distribute <span className="text-blue-400">Your Music</span> Without a Label</h1>
             <h2>Sell Your Music Online Worldwide</h2>
             <p>
