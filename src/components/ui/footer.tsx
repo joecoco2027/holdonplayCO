@@ -36,6 +36,7 @@ export default function Footer(){
                     <li>Login</li>
                     <li>Contact</li>
                     <li>Help</li>
+                    <li>&copy;All Rights Reserved. JOMAFA</li>
                 </ul>
             </div>            
         </div>

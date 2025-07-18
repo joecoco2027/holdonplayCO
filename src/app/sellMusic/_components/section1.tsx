@@ -144,13 +144,13 @@ const tableData = [
 export default function Section1(){
     return (
         <div className="flex flex-col p-10 justify-center items-center text-center">
-            <h1 className="text-6xl w-300 font-extrabold">Choose the Right Plan  for Your Music Distribution</h1>
+            <h1 className="text-6xl w-300 font-extrabold">Choose the Right Plan  for Your <span className="text-blue-400">Music Distribution</span></h1>
             <div className="relative  rounded-full border-2 w-max">
                 <button className=" bg-blue-400 focus:bg-blue-400  mr-2 p-2  rounded-full z:2 ">UNLIMITED PLANS</button>
-                <button className="rounded-full  p-2  focus:bg-blue-400">PAY PER RELEASE</button>
+                <button className="rounded-full  p-2  focus:bg-blue-400 pointer-events-none" >PAY PER RELEASE</button>
             </div>
             <div className="flex m-2 p-2 gap-5 items-center justify-center self-center align-middle">
-                <div className="border-5 w-70 border-yellow-400  rounded-2xl p-5 relative items-center flex flex-col self-center align-middle">
+                <div className="border-5 w-70 border-blue-900  rounded-2xl p-5 relative items-center flex flex-col self-center align-middle">
                     <h1 className="text-2xl">SINGLE</h1>
                     <h1 className="text-2xl">$13/year</h1>
                     <p>The MUST have plan for professional artists and labels.</p>
@@ -163,13 +163,13 @@ export default function Section1(){
                     <p>Release unlimited music plus advanced features to customize your releases.</p>
                     <button className="border-2 rounded-full mt-8 border-gray-300 p-2"><Link href="/pay">GET STARTED</Link></button>
                 </div>
-                <div className="border-5 w-70 rounded-2xl p-5 border-blue-400">
+                <div className="border-5 w-70 rounded-2xl p-5 border-gray-500">
                     <h1 className="text-2xl">ALBUM</h1>
                     <h1 className="text-2xl"> $40/year</h1>
                     <p>The essential distribution plan. Release unlimited music to 150+ Digital Stores across the globe.</p>
                     <button className="border-2 mt-2 rounded-full border-gray-300 p-2"><Link href="/pay">GET STARTED</Link></button>
                 </div>
-                <div className="border-5 w-70 rounded-2xl p-5 border-blue-400">
+                <div className="border-5 w-70 rounded-2xl p-5 border-green-400">
                     <h1 className="text-2xl">LONG PLAY</h1>
                     <h1 className="text-2xl"> $77/year</h1>
                     <p>The essential distribution plan. Release unlimited music to 150+ Digital Stores across the globe.</p>
@@ -204,11 +204,11 @@ export default function Section1(){
                     {tableData.map((src, ii) => (
                         <tr className="" key={src.name} >
                             <td className={`p-3 w-100  flex justify-between align-middle `}>{src.name}</td>
-                            <td className={`*:w-50  ${ii === tableData.length - 1 ? "border-0" : "border-b-2" }  border-gray-500 bg-gray-300 ${ii===tableData.length-1 ? 'rounded-bl-2xl': ''}`}>{src.datasingle === 'yellow' ?<FaCheck className="text-yellow-500"/> : src.datasingle}{src.datasingle === "" ? <RxCross1 className="text-red-500"/> : ""}</td>
-                            <td className={`*:w-50  ${ii === tableData.length - 1 ? "border-0" : "border-b-2" }  bg-gray-700 border-gray-400`} >{src.dataep === 'red' ?<FaCheck className="text-red-500"/> : src.dataep}{src.dataep === "" ? <RxCross1 className="text-red-500"/> : ""}</td>
-                            <td className={`*:w-50 ${ii === tableData.length - 1 ? "border-0" : "border-b-2" }  bg-gray-900 border-gray-400 `} >{src.dataalb === 'blue' ?<FaCheck className="text-blue-500"/> : src.dataalb}{src.dataalb === "" ? <RxCross1 className="text-red-500"/> : ""}</td>
-                            <td className={`*:w-50 ${ii === tableData.length - 1 ? "border-0" : "border-b-2" }  bg-gray-900 border-gray-400 `} >{src.datalp === 'green' ?<FaCheck className="text-blue-500"/> : src.datalp}{src.datalp === "" ? <RxCross1 className="text-red-500"/> : ""}</td>
-                            <td className={`*:w-50 ${ii === tableData.length - 1 ? "border-0" : "border-b-2" }  bg-gray-900 border-gray-400 ${ii===tableData.length-1 ? 'rounded-br-2xl': ''}`} >{src.datapro === 'black' ?<FaCheck className="text-blue-500"/> : src.datapro}{src.datapro === "" ? <RxCross1 className="text-red-500"/> : ""}</td>
+                            <td className={`*:w-50  ${ii === tableData.length - 1 ? "border-0" : "border-b-2" }  border-gray-500 bg-gray-800 ${ii===tableData.length-1 ? 'rounded-bl-2xl': ''}`}>{src.datasingle === 'yellow' ?<FaCheck className="text-yellow-500"/> : src.datasingle}{src.datasingle === "" ? <RxCross1 className="text-red-500"/> : ""}</td>
+                            <td className={`*:w-50  ${ii === tableData.length - 1 ? "border-0" : "border-b-2" }  bg-green-900 border-gray-400`} >{src.dataep === 'red' ?<FaCheck className="text-red-500"/> : src.dataep}{src.dataep === "" ? <RxCross1 className="text-red-500"/> : ""}</td>
+                            <td className={`*:w-50 ${ii === tableData.length - 1 ? "border-0" : "border-b-2" }  bg-red-900 border-gray-400 `} >{src.dataalb === 'blue' ?<FaCheck className="text-blue-500"/> : src.dataalb}{src.dataalb === "" ? <RxCross1 className="text-red-500"/> : ""}</td>
+                            <td className={`*:w-50 ${ii === tableData.length - 1 ? "border-0" : "border-b-2" }  bg-yellow-900 border-gray-400 `} >{src.datalp === 'green' ?<FaCheck className="text-green-500"/> : src.datalp}{src.datalp === "" ? <RxCross1 className="text-red-500"/> : ""}</td>
+                            <td className={`*:w-50 ${ii === tableData.length - 1 ? "border-0" : "border-b-2" }  bg-blue-900 border-gray-400 ${ii===tableData.length-1 ? 'rounded-br-2xl': ''}`} >{src.datapro === 'black' ?<FaCheck className="text-black"/> : src.datapro}{src.datapro === "" ? <RxCross1 className="text-red-500"/> : ""}</td>
                         </tr>
                     ))}
                     
