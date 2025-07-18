@@ -46,7 +46,7 @@ const companyz = [
     {
         name: "BeatPort",
         logo: "/companies/beatport.svg",
-        descr: "Beatport is the world’s largest electronic music platform for DJs, serving both downloads and streaming via web store, mobile app, DJ Web App, and integrations directly into DJ software and hardware. Beatport is a pivotal marketing tool that helps artists reach DJs and spread music in clubs, festivals, and radio, reaching their fans and fueling an irresistible hype that builds both before and after the release date."
+        descr: "Beatport is the World's largest electronic music platform for DJs, serving both downloads and streaming via web store, mobile app, DJ Web App, and integrations directly into DJ software and hardware. Beatport is a pivotal marketing tool that helps artists reach DJs and spread music in clubs, festivals, and radio, reaching their fans and fueling an irresistible hype that builds both before and after the release date."
     },
     {
         name: "Napster",

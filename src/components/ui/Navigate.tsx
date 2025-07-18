@@ -1,7 +1,6 @@
 
 "use client";
 import { useState } from "react";
-import { FaEarthAfrica} from "react-icons/fa6";
 import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
 

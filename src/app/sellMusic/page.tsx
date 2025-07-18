@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 
 import Section1 from "./_components/section1";
 export default function Pricing(){

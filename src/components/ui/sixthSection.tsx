@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import  { FaGreaterThan, FaLess, FaLessThan} from "react-icons/fa"
+import  { FaGreaterThan, FaLessThan} from "react-icons/fa"
 const artistsay = [
     {
         "name": "ClonOnly",
